@@ -11,6 +11,11 @@
     text-transform: capitalize;
     transition: all .2s linear;
   }
+  a{
+    color: var(--yellow);
+    text-decoration: none;
+    text-transform: none;
+  }
   *::selection{
     background: var(--yellow);
     color:#333;
@@ -179,9 +184,18 @@
     .about .row .counter .box{
       width: 100%;
     }
+    .skills .box-container .box{
+       width:100%;
+   }
     .education .box-container .box{
        width:100%;
    }
+   .project .box-container .box{
+      width:100%;
+  }
+  .intern .box-container .box{
+     width:100%;
+ }
    .portfolio .box-container .box{
      width: 100%
    }
@@ -264,6 +278,56 @@
     color:#fff;
 }
 
+
+
+.skills .box-container{
+  display:flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 1rem 0;
+  padding-left: 3rem;
+
+}
+.skills .box-container .box{
+  width: 27rem;
+  margin: 4rem 1rem;
+  padding-left: 4rem;
+
+  position: relative;
+}
+.skills .box-container .box span{
+  font-size: 1.35rem;
+  background: #222;
+  color: #fff;
+  border-radius: 5rem;
+  padding: .5rem 2.5rem;
+}
+
+.skills .box-container .box h3{
+  font-size: 2rem;
+  color: #fff;
+  padding-top: 1.5rem;
+}
+.skills .box-container .box p{
+  font-size: 1.4rem;
+  color: #eee;
+  padding:1rem 0;
+}
+.skills .box-container .box i{
+  position: absolute;
+  top: -1.5rem; left:-2.5rem;
+  height: 5rem;
+  width: 5rem;
+  border-radius: 50%;
+  line-height: 5rem;
+  text-align: center;
+  font-size: 2rem;
+  color: #fff;
+  background-color: var(--yellow);
+}
+
+
 .education .box-container{
   display:flex;
   align-items: center;
@@ -309,6 +373,107 @@
   color: #fff;
   background-color: var(--yellow);
 }
+
+
+
+
+.project .box-container{
+  display:flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 1rem 0;
+  padding-left: 3rem;
+}
+.project .box-container .box{
+  width: 27rem;
+  margin: 4rem 1rem;
+  padding-left: 4rem;
+  border-left: .2rem solid #fff;
+  position: relative;
+}
+.project .box-container .box span{
+  font-size: 1.35rem;
+  background: #222;
+  color: #fff;
+  border-radius: 5rem;
+  padding: .5rem 2.5rem;
+}
+
+.project .box-container .box h3{
+  font-size: 2rem;
+  color: #fff;
+  padding-top: 1.5rem;
+}
+.project .box-container .box p{
+  font-size: 1.4rem;
+  color: #eee;
+  padding:1rem 0;
+}
+.project .box-container .box i{
+  position: absolute;
+  top: -1.5rem; left:-2.5rem;
+  height: 5rem;
+  width: 5rem;
+  border-radius: 50%;
+  line-height: 5rem;
+  text-align: center;
+  font-size: 2rem;
+  color: #fff;
+  background-color: var(--yellow);
+}
+
+
+
+
+.intern .box-container{
+  display:flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 1rem 0;
+  padding-left: 3rem;
+}
+.intern .box-container .box{
+  width: 27rem;
+  margin: 4rem 1rem;
+  padding-left: 4rem;
+  border-left: .2rem solid #fff;
+  position: relative;
+}
+.intern .box-container .box span{
+  font-size: 1.35rem;
+  background: #222;
+  color: #fff;
+  border-radius: 5rem;
+  padding: .5rem 2.5rem;
+}
+
+.intern .box-container .box h3{
+  font-size: 2rem;
+  color: #fff;
+  padding-top: 1.5rem;
+}
+.intern .box-container .box p{
+  font-size: 1.4rem;
+  color: #eee;
+  padding:1rem 0;
+}
+.intern .box-container .box i{
+  position: absolute;
+  top: -1.5rem; left:-2.5rem;
+  height: 5rem;
+  width: 5rem;
+  border-radius: 50%;
+  line-height: 5rem;
+  text-align: center;
+  font-size: 2rem;
+  color: #fff;
+  background-color: var(--yellow);
+}
+
+
+
 
 .portfolio .box-container{
   display: flex;
